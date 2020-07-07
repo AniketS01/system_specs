@@ -1,0 +1,10 @@
+<h1 class="text-center"> <b>Host:</b> {{specs.host}}<br/>
+                                    <b>Platform:</b> {{specs.platform}}<br/>
+                                    <b>Total Memory:</b> {{specs.totalMem}} MB<br/>
+                                    <b>free memory:</b> {{specs.freeMem}} MB<br/>
+                                    <b>OS type:</b> {{specs.type}}<br/>
+                                    <b>Uptime:</b> {{specs.uptime}} mins </h1>
+                                    <h1><b>CPU's :-</b></h1>
+                                    {{#each specs.cpus}}
+                                        <h2 class="text-center">{{model}}</h2>
+                                    {{/each}}
